@@ -180,6 +180,7 @@ export class Order {
         this.toastr.error(response.error);
         return;
       }
+      
       this.toastr.success('Заявка успешно оформлена!');
       this.orderId.set(response.id);
     });
